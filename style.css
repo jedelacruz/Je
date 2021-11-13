@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    font-size: 16px;
+    --primary-color: white;
+	--secondary-color: black;
+}
+.dark-theme{
+	--primary-color: #212121;
+	--secondary-color: white;
+	transition: all 0.5s;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+body::-webkit-scrollbar{
+    width: 0.50rem;
+}
+body::-webkit-scrollbar-track{
+    background: white;
+}
+body::-webkit-scrollbar-thumb{
+    background: #1e1e24;
+}
+
+header{
+	display: flex;
+	width: 95%;
+	margin: auto;
+	align-items: center;
+	height: 10vh;
+	font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+.logo,.nav-links,.theme-changer{
+	display: flex;
+}
+.logo{
+	flex: 1;
+	font-size: 1.5rem;
+}
+nav{
+	flex: 3;
+}
+nav,.about-page{
+	cursor: pointer;
+}
+.nav-links{
+	justify-content: space-around;
+	list-style: none;
+}
+.nav-link {
+    color: var(--secondary-color);
+	text-decoration: none;
+	font-size: 0.9rem;
+}
+.nav-link:hover{
+    padding-bottom: 3px;
+    border-bottom: 2px solid var(--secondary-color);
+}
+.theme-changer{
+	justify-content: flex-end;
+	flex: 0.5;
+	cursor: pointer;
+}
+.theme-logo{
+	width: 20px;
+}
+header a{
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--secondary-color);
+}
+.homepage{
+    width: 95%;
+    margin: auto;
+    margin-top: 8vh;
+}
+.home-container{
+
+}
+.opa-text{
+    opacity: 0.5;
+    font-size: 1.2rem;
+}
+.homepage h1{
+    font-size: 2rem;
+}
+.home-button{
+    margin-top: 5vh;
+    border: 2px solid var(--secondary-color);
+    position:absolute;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+.home-button:hover{
+    transition: ease-in 0.5s;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.aboutpage{
+    width: 95%;
+    margin: auto;
+    margin-top: 5vh;
+}
+.about-container h1{
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+.about-container p{
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 1rem;
+}
+.aboutpage-content{
+    margin-top: 5vh;
+}
+.aboutpage-content h1{
+    font-size: 1.4rem;
+}
+.about-display{
+    display: flex;
+    margin-top: 2vh;
+}
+.about-img{
+    width: 30vw;
+    margin-right: 5px;
+    transition: ease 0.5s;
+}
+.about-img:hover{
+    transform: scale(1.1);
+}
+.about-display p{
+    font-size: 1rem;
+}
+.skills-page{
+    margin-top: 2vh;
+}
+.skills-h1{
+    font-size: 1.4rem;
+}
+.container {
+	width: 100%; /* Full width */
+	background-color: #ddd; /* Grey background */
+    animation: je-container ease 2s;
+}
+@keyframes je-container{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 10;
+    }
+} 
+.skills {
+    font-size: 1rem;
+	text-align: right; /* Right-align text */
+	padding-top: 0px; /* Add top padding */
+	padding-bottom: 0px; /* Add bottom padding */
+	color: var(--primary-color); /* White text color */
+} 
+
+.html {
+	width: 90%; background-color: #04AA6D;
+    animation: je1 ease 2s ;
+}
+@keyframes je1{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90;
+    }
+}
+.css {
+	width: 60%; background-color: #2196F3;
+    animation: je2 ease 2s ;
+} 
+@keyframes je2{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60;
+    }
+}
+.js {
+	width: 8%; background-color: #f44336;
+    animation: je3 ease 2s ;
+} 
+@keyframes je3{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 8;
+    }
+}
+.php {
+	width: 30%; background-color: #808080;
+    animation: je4 ease 2s ;
+} 
+@keyframes je4{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30;
+    }
+}
+.services-page{
+    width: 95%;
+    margin: auto;
+    margin-top: 5vh;
+}
+.services-main-p{
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+.services-sub{
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 1rem;
+    opacity: 0.5;
+    margin-bottom: 5vh;
+}
+.content-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: auto;
+}
+.card{
+    height: 200px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    border: var(--secondary-color) SOLID 3PX;
+    margin-bottom: 30px;
+    padding: 20px;
+    text-align: center;
+}
+.card span{
+    font-size: 2rem;
+}
+.card:hover{
+    background-color: #212121;
+    color: white;
+    transition: ease 0.5s;
+    transform: scale(1.1);
+}
+
+.works-page{
+    width: 95%;
+    margin: auto;
+}
+.works-page h1{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.works-page p{
+    text-align: center;
+    opacity: 0.5;
+    font-size: 1rem;
+    letter-spacing: 3px;
+}
+.works-page h2{
+    text-align: center;
+    margin-top: 5vh;
+    border: red 3px solid;
+    padding: 20px;
+}
+
+}
+.contact-page{
+    width: 95%;
+    margin: auto;
+    margin-top: 5vh;
+}
+.contact-page h1{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.contact-page p{
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 1rem;
+    opacity: 0.5;
+}
+.icon-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5vh;
+    font-size: 30px;
+    cursor: pointer;
+    transition: ease 3s;
+}
+.icon-container span:hover{
+    color: red;
+}
+#map{
+    margin-top: 3vh;
+    width: 100%;
+    height: 25vh;
+}
+.btn{
+    color: var(--secondary-color);
+}
+footer{
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    opacity: 0.3;
+}
+.text-bg{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 30%;
+    left: 50%;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15rem;
+    color: white;
+    text-shadow: 
+    -8px -8px 12px rgba(255,255,255,0.4),
+    8px 8px 12px rgba(0,0,0,0.08);
+    caret-color:#262626;
+    outline: none;
+    opacity: 0.5;
+}
+@media only screen and (min-width: 768px) {
+    .text-bg{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 40%;
+        left: 50%;
+        font-family: 'Poppins',sans-serif;
+        font-size: 25rem;
+        color: white;
+        text-shadow: 
+        -8px -8px 12px rgba(255,255,255,0.4),
+        8px 8px 12px rgba(0,0,0,0.08);
+        caret-color:#262626;
+        outline: none;
+        opacity: 0.5;
+    }
+    header{
+        display: flex;
+        width: 95%;
+        margin: auto;
+        align-items: center;
+        height: 10vh;
+        font-size: 1.2rem;
+        color: var(--secondary-color);
+    }
+    .logo,.nav-links,.theme-changer{
+        display: flex;
+    }
+    .logo{
+        flex: 1;
+        font-size: 1.7rem;
+    }
+    nav{
+        flex: 1;
+    }
+    nav,.about-page{
+        cursor: pointer;
+    }
+    .nav-links{
+        justify-content: space-around;
+        list-style: none;
+    }
+    .nav-link {
+        color: var(--secondary-color);
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+    .nav-link:hover{
+        
+    }
+    .theme-logo{
+        width: 30px;
+    }
+    .homepage{
+        width: 95%;
+        margin: auto;
+        margin-top: 15vh;
+    }
+    .home-container{
+    
+    }
+    .opa-text{
+        opacity: 0.5;
+        font-size: 1.5rem;
+    }
+    .homepage h1{
+        font-size: 3rem;
+    }
+    .home-button{
+        margin-top: 10vh;
+        border: 2px solid var(--secondary-color);
+        position:absolute;
+        padding: 5px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .aboutpage{
+        width: 85%;
+        margin: auto;
+        margin-top: 25vh;
+    }
+    .about-container h1{
+        font-size: 2.5rem;
+        letter-spacing: 3px;
+        text-align: center;
+    }
+    .about-container p{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .aboutpage-content{
+        margin-top: 5vh;
+    }
+    .aboutpage-content h1{
+        font-size: 1.7rem;
+    }
+    .about-display{
+        display: flex;
+        margin-top: 2vh;
+        margin: auto;
+    }
+    .about-img{
+        width: 20%;
+        margin-right: 5px;
+    }
+    .about-display p{
+        font-size: 1.5rem;
+        
+    }
+    .skills-page{
+        margin-top: 2vh;
+    }
+    .skills-h1{
+        font-size: 1.4rem;
+    }
+    .container {
+        width: 50%; /* Full width */
+        background-color: #ddd; /* Grey background */
+    }
+      
+    .skills {
+        font-size: 1rem;
+        text-align: right; /* Right-align text */
+        padding-top: 3px; /* Add top padding */
+        padding-bottom: 3px; /* Add bottom padding */
+        color: white; /* White text color */
+    } 
+    .html {
+        width: 90%; background-color: #04AA6D;
+    }
+    .css {
+        width: 60%; background-color: #2196F3;
+    } /* Blue */
+    .js {
+        width: 8%; background-color: #f44336;
+    } /* Red */
+    .php {
+        width: 30%; background-color: #808080;
+    } /* Dark Grey */
+    .services-page{
+        width: 85%;
+        margin: auto;
+        margin-top: 5vh;
+    }
+    .services-main-p{
+        font-size: 2.5rem;
+        letter-spacing: 3px;
+        text-align: center;
+    }
+    .services-sub{
+        letter-spacing: 3px;
+        font-size: 1.2rem;
+        opacity: 0.5;
+        text-align: center;
+    }
+    .content-box{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 95%;
+        margin: auto;
+    }
+    .card{
+        height: 300px;
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: var(--secondary-color) SOLID 3PX;
+    }
+    .works-page{
+        width: 80%;
+        margin: auto;
+    }
+    .works-page h1{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .works-page p{
+        text-align: center;
+        opacity: 0.5;
+        font-size: 1.2rem;
+        letter-spacing: 3px;
+    }
+    .works-page h2{
+        text-align: center;
+        margin-top: 5vh;
+        border: red 3px solid;
+        padding: 20px;
+    }
+    .contact-page{
+        width: 95%;
+        margin: auto;
+        margin-top: 5vh;
+    }
+    .contact-page h1{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .contact-page p{
+        text-align: center;
+        letter-spacing: 3px;
+        font-size: 1.2rem;
+        opacity: 0.5;
+    }
+    .icon-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 5vh;
+        font-size: 30px;
+    }
+    #map{
+        margin-top: 3vh;
+        width: 80%;
+        height: 25vh;
+        width: 100%;
+    }
+    footer{
+        text-align: center;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+}
