@@ -309,10 +309,12 @@ header a{
     margin-top: 5vh;
     font-size: 30px;
     cursor: pointer;
-    transition: ease 3s;
+}
+.icon-container a{
+    color: var(--secondary-color);
 }
 .icon-container span:hover{
-    color: red;
+    
 }
 #map{
     margin-top: 3vh;
